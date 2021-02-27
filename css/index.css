@@ -44,12 +44,27 @@
     
     nav,
     main,
-    footer {
+    footer,
+    aside {
         padding: 0px calc(0.18 * 100vw);
     }
     
     nav {
         color: rgb(98, 169, 255);
+    }
+    
+    .original {
+        position: fixed;
+        z-index: -2;
+    }
+    
+    .fake {
+        position: relative;
+        visibility: hidden;
+    }
+    
+    aside {
+        position: relative;
     }
     
     .banner {
@@ -59,6 +74,7 @@
     aside {
         background-color: #cad9ec;
         border-radius: 16px 16px 0 0;
+        padding: 24px initial;
     }
     
     .flex {
@@ -71,7 +87,6 @@
     nav {
         height: 50px;
         width: 100%;
-        position: sticky;
     }
     
     h2 {
@@ -101,11 +116,21 @@
     
     input {
         width: 60%;
+        background: transparent;
     }
     
     select {
         width: 35%;
         padding: 4px 4px;
+        background-color: #b9c7d8;
+    }
+    
+    input:focus {
+        border-color: #3c6fae;
+    }
+    
+    p {
+        line-height: 24px;
     }
     
     button {
@@ -123,8 +148,9 @@
     @media (max-width: 800px) {
         nav,
         main,
-        footer {
-            padding: 20px calc(0.1 * 100vw);
+        footer,
+        aside {
+            padding: 16px calc(0.1 * 100vw);
         }
         .sm-hide {
             display: none;

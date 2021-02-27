@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unilag Aggregate Calculator</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="flex">
+        <h4>Agg <span>Calc</span></h4>
+        <div class="header-to-right">
+            <div class="how-to-calculate sm-hide">
+                <a href="#how-to-calculate" class="nav-link">How To Calculate</a>
+            </div>
+            <div class="change-mode">
+                <i class="fa fa-moon" class="hide"></i>
+                <i class="fa fa-sun"></i>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="banner">
+            <h2>
+                Calculate Your Unilag Aggregate Score
+            </h2>
+            <p>Enter in the form below the required grade details, and get your aggregate score!</p>
+        </div>
+
+        <section>
+            <h3>O-Level Details</h3>
+            <p>
+                Enter the O-Level subjects required for your course and select their corresponding grades.
+            </p>
+            <form>
+                <div class="flex">
+                    <input type="text" name="first-input" />
+                    <select name="first-select">
+                    </select>
+                </div>
+                <div class="flex">
+                    <input type="text" name="second-input" />
+                    <select name="second-select"></select>
+                </div>
+                <div class="flex">
+                    <input type="text" name="third-input" />
+                    <select name="third-select"></select>
+                </div>
+                <div class="flex">
+                    <input type="text" name="fourth-input" />
+                    <select name="fourth-select"></select>
+                </div>
+                <div class="flex">
+                    <input type="text" name="fifth-input" />
+                    <select name="fifth-select"></select>
+                </div>
+            </form>
+        </section>
+
+        <section>
+            <h3>UTME</h3>
+            <p>Enter your UTME score</p>
+            <input type="number" name="utme-score-input" /> / 400
+        </section>
+
+        <section>
+            <h3>Post UTME Score</h3>
+            <p>Enter your Post UTME score</p>
+            <small>Check your post UTME score <a href="https://putme.unilag.edu.ng" class="body-link">here</a></small>
+            <input type="number" name="post-utme-score-input" /> / 30
+        </section>
+
+        <button>Calculate Aggregate</button>
+
+        <div class="aggregate-result"></div>
+
+        <div id="how-to-calculate">
+            <p>Want to know how we calculated this?</p>
+            <small>Read Here</small>
+        </div>
+
+    </main>
+
+
+    <footer>
+        <h3>
+            Did you enjoy using this calculator? <br> Check out
+            <a href="https://steph-crown.github.io/calculator" class="footer-link"></a>
+        </h3>
+        <h4>Get in touch. Drop a feedback</h4>
+        <div class="socials flex">
+            <a href="" class="fa fa-facebook footer-link"></a>
+            <a href="https://twitter.com/stephcrown06" class="fa fa-twitter footer-link"></a>
+            <a href="" class="fa fa-linkedin footer-link"></a>
+            <a href="https://github.com/steph-crown" class="fa fa-github footer-link"></a>
+        </div>
+        <p>Made with <i class="fa fa-heart"></i> by
+            <a href="https://steph-portfolio.vercel.app"></a>
+        </p>
+    </footer>
+
+    <script src="./js/addOptions.js"></script>
+    <script src="./js/aggregateCalc.js"></script>
+    <script src="./js/showAggregate.js"></script>
+    <script src="./js/showHowToCalculate.js"></script>
+</body>
+
+</html>

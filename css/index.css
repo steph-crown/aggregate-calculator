@@ -145,6 +145,25 @@
         color: #efefef;
     }
     
+    footer h4 {
+        font-weight: 400;
+        line-height: 36px;
+    }
+    
+    .footer-link,
+    .fa-heart {
+        color: #6bbb47;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    .socials a {
+        display: block;
+        margin: 24px 0;
+    }
+    
     @media (max-width: 800px) {
         nav,
         main,

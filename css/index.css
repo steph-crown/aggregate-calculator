@@ -136,9 +136,10 @@
         border-radius: 0;
         color: white;
     }
-    /* .aggregate-result span {
-        display: block;
-    } */
+    
+    .aggregate-result h4 {
+        margin: 12px 0;
+    }
     
     select {
         width: 35%;

@@ -12,9 +12,9 @@ const displayAggregate = (agg) => {
     }
 
     aggregateResultMarkup += `
-        <h3>UTME Score</h3> 
+        <h4>UTME Score</h4> 
         <span class="score">${utmeScore} / 400</span> 
-        <h3>Post UTME Score</h3>
+        <h4>Post UTME Score</h4>
         <span class="score">${postUtmeScore} / 30</span>
         <h3 class="aggregate">Aggregate Score</h3>
         <span class="score aggregate">${Math.round(agg * 100) / 100}% / 100%</span>

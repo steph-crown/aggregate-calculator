@@ -1,13 +1,13 @@
 const displayAggregate = (agg) => {
     let aggregateResultMarkup = `
-        <h3>Olevel Grades</h3>
+        <h4>Olevel Grades</h4>
     `
 
     for (let i = 0; i <= 4; i++) {
         aggregateResultMarkup += `
-            <span id="id'>${i + 1}.</span> 
+            <p><span id="id'>${i + 1}.</span>
             <span id="subject">${inputArray[i].value}</span> 
-            <span id="grade">${selectArray[i].value} </span>
+            <span id="grade">${selectArray[i].value} </span></p>
         `
     }
 

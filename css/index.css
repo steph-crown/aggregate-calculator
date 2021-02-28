@@ -45,7 +45,8 @@
     nav,
     main,
     footer,
-    aside {
+    aside,
+    #how-to-calculate {
         padding: 0px calc(0.18 * 100vw);
     }
     
@@ -72,16 +73,23 @@
     }
     
     aside {
-        background-color: #cad9ec;
+        background-color: #040f1d;
         border-radius: 16px 16px 0 0;
         padding: 24px initial;
+        box-shadow: 7px 0 20px rgba(0, 0, 0, 0.5);
+        color: rgb(214, 202, 194);
     }
     
-    .flex {
+    .flex,
+    .flexes {
         display: flex;
         align-items: center;
         justify-content: space-between;
         margin: 8px 0;
+    }
+    
+    .flex {
+        margin: 24px 0;
     }
     
     nav {
@@ -98,6 +106,8 @@
     
     p {
         margin: 8px 0;
+        font-weight: 400;
+        font-style: normal;
     }
     
     section {
@@ -111,18 +121,27 @@
         border-radius: 5px;
         padding: 6px 16px;
         font-size: 16px;
-        border: 1px solid #3b3b3b;
+        /* border: 1px solid #3b3b3b; */
     }
     
     input {
         width: 60%;
         background: transparent;
+        font-family: Lato;
+        font-weight: 400;
+        font-size: 14px;
+        /* padding: 10px 16px; */
+        border: none;
+        border-bottom: 1px solid #3b3b3b;
+        border-radius: 0;
     }
     
     select {
         width: 35%;
         padding: 4px 4px;
-        background-color: #b9c7d8;
+        background-color: #030a13;
+        font-size: 14px;
+        color: rgb(214, 202, 194);
     }
     
     input:focus {
@@ -133,16 +152,26 @@
         line-height: 24px;
     }
     
+    #how-to-calculate {
+        padding-top: 32px;
+        background-color: #1a222c;
+        color: white;
+    }
+    
     button {
-        background-color: #3c6fae;
+        background-color: #6bbb47;
         color: #ffffff;
         border: none;
         padding: 12px 16px;
     }
     
     footer {
-        background-color: #3c6fae;
+        background-color: #030a13;
         color: #efefef;
+    }
+    
+    small {
+        color: #6bbb47;
     }
     
     footer h4 {
@@ -168,7 +197,8 @@
         nav,
         main,
         footer,
-        aside {
+        aside,
+        #how-to-calculate {
             padding: 16px calc(0.1 * 100vw);
         }
         .sm-hide {

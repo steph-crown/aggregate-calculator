@@ -134,6 +134,7 @@
         border: none;
         border-bottom: 1px solid #3b3b3b;
         border-radius: 0;
+        color: white;
     }
     
     select {

@@ -104,6 +104,10 @@
         color: #040f1d;
     }
     
+    .score {
+        color: #6bbb47;
+    }
+    
     p {
         margin: 8px 0;
         font-weight: 400;
